@@ -79,6 +79,8 @@ user.js — это файл конфигурации для браузера, к
 ### Настройка различных методов кэширования
 1. Включить кэширование диска
 2. Отключить автоматическое определение размера дискового кэша
+3. Установить ограничение размера кэша на диске в 8 Гб
+4. Более быстрый SSL - увеличить кэширование токенов (быстрое повторное подключение)
 
 ### Отключить ненужные функции и различные тайм-ауты
 1. Отключить счётчики производительности
@@ -197,7 +199,9 @@ user.js — This is a configuration file for the browser, which is used to confi
 
 ### Configuring a variety of caching
 1. Enable disk caching
-2. Отключить автоматическое определение размера дискового кэша
+2. Disable automatic disk cache size detection
+3. Set the disk cache size limit to 8 GB
+4. Faster SSL - increase token caching (fast reconnects)
 
 ### Disable unnecessary functions and various timeouts
 1. Disable performance metrics

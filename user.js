@@ -9,7 +9,7 @@
 // Customizing the GUI
 // Настройка графического интерфейса
 // Description: This section customizes some elements of the browser interface.
-// Описание: В этом разделе настраиваются 12некоторые элементы интерфейса браузера.
+// Описание: В этом разделе настраиваются некоторые элементы интерфейса браузера.
 
 // Enable compact icon mode
 // Включить режим компактных значков

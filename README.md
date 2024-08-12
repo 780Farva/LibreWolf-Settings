@@ -90,6 +90,7 @@ user.js — это файл конфигурации для браузера, к
 5. Блокирование функционала, следящего за использованием WI-FI-сетей
 6. Отключить информацию о сетевом соединении
 7. Запретить проверку браузера, установленного по умолчанию в операционной системе
+8. Отключить режим чтения
 
 ### Отключить небезопасные функции
 1. Отключить геолокацию
@@ -211,6 +212,7 @@ user.js — This is a configuration file for the browser, which is used to confi
 5. Blocking functionality that monitors the use of WI-FI networks
 6. Disable network connection information
 7. Prohibiting checking the browser installed by default in the operating system
+8. Disable read mode
 
 ### Disable unsafe functions
 1. Disable geolocation

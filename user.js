@@ -249,12 +249,12 @@ user_pref("browser.cache.disk.enable", true);
 // Отключить автоматическое определение размера дискового кэша
 user_pref("browser.cache.disk.smart_size.enabled", false);
 
-// Установить ограничение размера кэша на диске в 8 Гб
 // Set the disk cache size limit to 8 GB
+// Установить ограничение размера кэша на диске в 8 Гб
 user_pref("browser.cache.disk.capacity", 4096000);
 
-// Более быстрый SSL - увеличить кэширование токенов (быстрое повторное подключение)
 // Faster SSL - increase token caching (fast reconnects)
+// Более быстрый SSL - увеличить кэширование токенов (быстрое повторное подключение)
 user_pref("network.ssl_tokens_cache_capacity", 8192);
 //-----------------------------------------------------------------------------------------------------------
 // Disable unnecessary functions and various timeouts

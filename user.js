@@ -301,6 +301,33 @@ user_pref("network.manage-offline-status", false);
 // Prohibiting checking the browser installed by default in the operating system
 // Запретить проверку браузера, установленного по умолчанию в операционной системе
 user_pref("browser.shell.checkDefaultBrowser", false);
+
+// Disable read mode
+// Отключить режим чтения
+user_pref("reader.character_spacing", 0);
+user_pref("reader.color_scheme", "");
+user_pref("reader.color_scheme.values", "");
+user_pref("reader.colors_menu.enabled", false);
+user_pref("reader.content_width", 0);
+user_pref("reader.content_width", "");
+user_pref("reader.custom_colors.background", "");
+user_pref("reader.custom_colors.foreground", "");
+user_pref("reader.custom_colors.selection-highlight", "");
+user_pref("reader.custom_colors.unvisited-links", "");
+user_pref("reader.custom_colors.visited-links", "");
+user_pref("reader.errors.includeURLs", false);
+user_pref("reader.font_size", 0);
+user_pref("reader.font_type", "");
+user_pref("reader.font_type.values", "");
+user_pref("reader.font_weight", "");
+user_pref("reader.font_weight.values", "");
+user_pref("reader.improved_text_menu.enabled", false);
+user_pref("reader.line_height", 0);
+user_pref("reader.parse-node-limit", 0);
+user_pref("reader.parse-on-load.enabled", false);
+user_pref("reader.text_alignment", "");
+user_pref("reader.toolbar.vertical", false);
+user_pref("reader.word_spacing", 0);
 //-----------------------------------------------------------------------------------------------------------
 // Disable unsafe functions
 // Отключить небезопасные функции

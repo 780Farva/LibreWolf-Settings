@@ -1,5 +1,5 @@
 // LibreWolf settings
-// Version: 0.01 [11.08.2024]
+// Version: 0.02 [12.08.2024]
 // Description: LibreWolf browser settings, which allow you to disable many unnecessary and unsafe functions, 
 // as well as optimize other parameters to achieve maximum performance. At the same time, 
 // the correct operation of the sites is ensured without "breaking" them.
@@ -9,7 +9,7 @@
 // Customizing the GUI
 // Настройка графического интерфейса
 // Description: This section customizes some elements of the browser interface.
-// Описание: В этом разделе настраиваются некоторые элементы интерфейса браузера.
+// Описание: В этом разделе настраиваются 12некоторые элементы интерфейса браузера.
 
 // Enable compact icon mode
 // Включить режим компактных значков
@@ -248,6 +248,14 @@ user_pref("browser.cache.disk.enable", true);
 // Disable automatic disk cache size detection
 // Отключить автоматическое определение размера дискового кэша
 user_pref("browser.cache.disk.smart_size.enabled", false);
+
+// Установить ограничение размера кэша на диске в 8 Гб
+// Set the disk cache size limit to 8 GB
+user_pref("browser.cache.disk.capacity", 4096000);
+
+// Более быстрый SSL - увеличить кэширование токенов (быстрое повторное подключение)
+// Faster SSL - increase token caching (fast reconnects)
+user_pref("network.ssl_tokens_cache_capacity", 8192);
 //-----------------------------------------------------------------------------------------------------------
 // Disable unnecessary functions and various timeouts
 // Отключить ненужные функции и различные тайм-ауты

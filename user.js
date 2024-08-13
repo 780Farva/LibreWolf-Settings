@@ -58,7 +58,7 @@ user_pref("accessibility.typeaheadfind", true);
 // Description: This section disables access to various peripherals that may be connected to the device.
 // Описание: В этом разделе отключается доступ к различным периферийным устройствам, которые могут быть подключены к устройству.
 
-// Disable microphone access
+// Disable microphone access and voice processing
 // Отключить доступ к микрофону и обработку голоса
 user_pref("media.getusermedia.audio.processing.aec", 0);
 user_pref("media.getusermedia.audio.processing.aec.enabled", false);

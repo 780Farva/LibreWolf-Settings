@@ -1,5 +1,5 @@
 // LibreWolf settings
-// Version: 0.02 [12.08.2024]
+// Version: 0.03 [13.08.2024]
 // Description: LibreWolf browser settings, which allow you to disable many unnecessary and unsafe functions, 
 // as well as optimize other parameters to achieve maximum performance. At the same time, 
 // the correct operation of the sites is ensured without "breaking" them.
@@ -59,7 +59,17 @@ user_pref("accessibility.typeaheadfind", true);
 // Описание: В этом разделе отключается доступ к различным периферийным устройствам, которые могут быть подключены к устройству.
 
 // Disable microphone access
-// Отключить доступ к микрофону
+// Отключить доступ к микрофону и обработку голоса
+user_pref("media.getusermedia.audio.processing.aec", 0);
+user_pref("media.getusermedia.audio.processing.aec.enabled", false);
+user_pref("media.getusermedia.audio.processing.aec.mobile", false);
+user_pref("media.getusermedia.audio.processing.agc2.forced", false);
+user_pref("media.getusermedia.audio.processing.agc", 0);
+user_pref("media.getusermedia.audio.processing.agc.enabled", false);
+user_pref("media.getusermedia.audio.processing.hpf.enabled", false);
+user_pref("media.getusermedia.audio.processing.noise", 0);
+user_pref("media.getusermedia.audio.processing.noise.enabled", false);
+user_pref("media.getusermedia.audio.processing.transient.enabled", false);
 user_pref("media.getusermedia.microphone.off_while_disabled.delay_ms", 0);
 user_pref("media.getusermedia.microphone.off_while_disabled.enabled", false);
 user_pref("media.getusermedia.microphone.prefer_voice_stream_with_processing.enabled", false);
@@ -497,6 +507,15 @@ user_pref("browser.search.suggest.enabled.private", false);
 user_pref("browser.search.update", false);
 user_pref("browser.search.widget.inNavBar", false);
 user_pref("browser.search.widget.removeAfterDaysUnused", 0);
+
+// Disable screen sharing
+// Отключить совместное использование экрана
+user_pref("media.getusermedia.screensharing.enabled", false);
+
+// Disable the ability to capture screen content or parts of the screen
+// Отключить возможность захвата содержимого экрана или его частей
+user_pref("media.getdisplaymedia.enabled", false);
+user_pref("media.getdisplaymedia.previews.enabled", false);
 //-----------------------------------------------------------------------------------------------------------
 // Various browser tweaks
 // Различные твики браузера

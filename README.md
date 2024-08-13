@@ -56,7 +56,7 @@ user.js — это файл конфигурации для браузера, к
 10. Включить поиск текста на странице по мере его ввода
 
 ### Отключение доступа к устройствам
-1. Отключить доступ к микрофону
+1. Отключить доступ к микрофону и обработку голоса
 2. Отключить доступ к камере
 3. Отключить доступ к геймпаду
 4. Отключить доступ к датчикам устройства
@@ -105,6 +105,8 @@ user.js — это файл конфигурации для браузера, к
 10. Запретить использование API блокировки экрана
 11. Блокировать автоматическое воспроизведение аудио и видео
 12. Настройки поиска (отключение всех возможных подсказок и т.д.)
+13. Отключить совместное использование экрана
+14. Отключить возможность захвата содержимого экрана или его частей
 
 ### Различные твики браузера
 1. Разрешить установку неподписанных расширений (за пределами addons.mozilla.org)
@@ -227,6 +229,8 @@ user.js — This is a configuration file for the browser, which is used to confi
 10. Prohibit the use of the screen lock API
 11. Block auto-playback of audio and video
 12. Search settings (disabling all possible hints, etc.)
+13. Disable screen sharing
+14. Disable the ability to capture screen content or parts of the screen
 
 ### Various browser tweaks
 1. Allow the installation of unsigned extensions (outside addons.mozilla.org)

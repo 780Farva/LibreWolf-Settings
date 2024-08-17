@@ -103,6 +103,11 @@ user.js — это файл конфигурации для браузера, к
 6. Отключить информацию о сетевом соединении
 7. Запретить проверку браузера, установленного по умолчанию в операционной системе
 8. Отключить режим чтения
+9. Отключить бэкапы закладок
+10. Отключить сохранение адресов в списке истории Адресной панели
+11. Уменьшить количество недавно закрытых вкладкок до 5
+12. Уменьшить количество недавно закрытых окон до 2
+13. Отключить восстановление сессии после падения
 
 ### Отключить небезопасные функции
 1. Отключить геолокацию
@@ -239,6 +244,11 @@ user.js — This is a configuration file for the browser, which is used to confi
 6. Disable network connection information
 7. Prohibiting checking the browser installed by default in the operating system
 8. Disable read mode
+9. Disable bookmark backups
+10. Disable saving addresses in the Address Bar history list
+11. Reduce the number of recently closed tabs to 5
+12. Reduce the number of recently closed windows to 2
+13. Disable session recovery after a crash
 
 ### Disable unsafe functions
 1. Disable geolocation

@@ -1,5 +1,5 @@
 // LibreWolf settings
-// Version: 0.03 [13.08.2024]
+// Version: 0.04 [17.08.2024]
 // Description: LibreWolf browser settings, which allow you to disable many unnecessary and unsafe functions, 
 // as well as optimize other parameters to achieve maximum performance. At the same time, 
 // the correct operation of the sites is ensured without "breaking" them.
@@ -166,22 +166,47 @@ user_pref("dom.event.clipboardevents.enabled", false);
 // Description: This section configures the rendering of pages and their content for maximum performance.
 // Описание: В этом разделе настраивается рендеринг страниц и их содержимого для максимальной производительности.
 
-// Hardware acceleration activation, page rendering acceleration
-// Активация аппаратного ускорения, ускорение рендеринга страниц
+// Enable support for WebGPU, a new API for working with graphics
+// Включить поддержку WebGPU, нового API для работы с графикой
 user_pref("dom.webgpu.enabled", true);
+
+// Enable hardware acceleration for HTML5 Canvas
+// Включить аппаратное ускорение для HTML5 Canvas
 user_pref("gfx.canvas.accelerated", true);
-user_pref("gfx.canvas.accelerated.aa-stroke.enabled", true);
-user_pref("gfx.canvas.accelerated.async-present", true);
 user_pref("gfx.canvas.accelerated.force-enabled", true);
+
+// Enable anti-aliasing
+// Включить сглаживание (anti-aliasing)
+user_pref("gfx.canvas.accelerated.aa-stroke.enabled", true);
+
+// Enable asynchronous display, which improves rendering performance
+// Включить асинхронное отображение, что повысить производительность при рендеринге
+user_pref("gfx.canvas.accelerated.async-present", true);
+
+// Enable Direct2D support for rendering
+// Включить поддержку Direct2D для рендеринга
 user_pref("gfx.direct2d.disabled", false);
 user_pref("gfx.direct2d.force-enabled", true);
-user_pref("gfx.direct2d.target-independent-rasterization.disabled", false);
-user_pref("gfx.direct3d11.allow-keyed-mutex", true);
+
+// Disable interruption of work when errors occur in Direct3D 11
+// Отключить прерывание работы при возникновении ошибок в Direct3D 11
 user_pref("gfx.direct3d11.break-on-error", false);
+
+// Disables debugging in Direct3D 11
+// Отключает отладку в Direct3D 11
 user_pref("gfx.direct3d11.enable-debug-layer", false);
-user_pref("gfx.direct3d11.reuse-decoder-device", true);
-user_pref("gfx.direct3d11.reuse-decoder-device-force-enabled", true);
+
+// Enable double buffering in Direct3D 11 to improve smooth rendering
+// Включить двойную буферизацию в Direct3D 11 для улучшения плавности рендеринга
 user_pref("gfx.direct3d11.use-double-buffering", true);
+
+// Enable hardware video decoding
+// Включить аппаратное декодирование видео
+user_pref("media.hardware-video-decoding.enabled", true);
+user_pref("media.hardware-video-decoding.force-enabled", true);
+
+// Enable new WebRender rendering that uses GPU to improve performance
+// Включить новый рендеринг WebRender, который использует GPU для улучшения производительности
 user_pref("gfx.webrender.all", true);
 user_pref("gfx.webrender.compositor", true);
 user_pref("gfx.webrender.compositor.force-enabled", true);
@@ -192,16 +217,20 @@ user_pref("gfx.webrender.precache-shaders", true);
 user_pref("gfx.webrender.quality.force-subpixel-aa-where-possible", true);
 user_pref("gfx.webrender.scissored-cache-clears.enabled", true);
 user_pref("gfx.webrender.scissored-cache-clears.force-enabled", true);
+
+// Enable the use of OpenGL 2.0 for hardware acceleration
+// Включить использование OpenGL 2.0 для аппаратного ускорения
 user_pref("layers.acceleration.disabled", false);
 user_pref("layers.acceleration.force-enabled", true);
-user_pref("layers.d3d11.enable-blacklist", false);
-user_pref("layers.force-active", true);
+
+// Enable the use of a separate process for processing
+// Включить использование отдельного процесса для обработки
 user_pref("layers.gpu-process.enabled", true);
 user_pref("layers.gpu-process.force-enabled", true);
-user_pref("media.hardware-video-decoding.enabled", true);
-user_pref("media.hardware-video-decoding.force-enabled", true);
-user_pref("media.navigator.mediadatadecoder_vpx_enabled", true);
-user_pref("webgl.force-enabled", true);
+
+// Disable checking the relevance of the driver on the video card
+// Отключить проверку актуальности драйвера на видеокарту
+user_pref("layers.d3d11.enable-blacklist", false);
 
 // Disable the delay before starting page rendering
 // Отключить задержку перед началом рендеринга страницы
@@ -338,6 +367,27 @@ user_pref("reader.parse-on-load.enabled", false);
 user_pref("reader.text_alignment", "");
 user_pref("reader.toolbar.vertical", false);
 user_pref("reader.word_spacing", 0);
+
+// Отключить бэкапы закладок
+// Disable bookmark backups
+user_pref("browser.bookmarks.max_backups", 0);
+
+// Отключить сохранение адресов в списке истории Адресной панели
+// Disable saving addresses in the Address Bar history list
+user_pref("browser.sessionhistory.max_entries", 0);
+
+// Уменьшить количество недавно закрытых вкладкок до 5
+// Reduce the number of recently closed tabs to 5
+user_pref("browser.sessionstore.max_tabs_undo", 5);
+
+// Уменьшить количество недавно закрытых окон до 2
+// Reduce the number of recently closed windows to 2
+user_pref("browser.sessionstore.max_windows_undo", 2);
+
+// Отключить восстановление сессии после падения
+// Disable session recovery after a crash
+user_pref("browser.sessionstore.max_resumed_crashes", 0);
+user_pref("browser.sessionstore.resume_from_crash", false);
 //-----------------------------------------------------------------------------------------------------------
 // Disable unsafe functions
 // Отключить небезопасные функции

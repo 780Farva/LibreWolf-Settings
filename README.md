@@ -71,10 +71,22 @@ user.js — это файл конфигурации для браузера, к
 4. Закрыть доступ скриптам к буферу обмена
 
 ### Настройка рендеринга страниц
-1. Активация аппаратного ускорения, ускорение рендеринга страниц
-2. Отключить задержку перед началом рендеринга страницы
-3. Отключить анимацию полного открытия видео и подсказку "нажмите esc.."
-4. Отключить прогнозирование перехода и предварительную загрузку содержимого страницы
+1. Включить поддержку WebGPU, нового API для работы с графикой
+2. Включить аппаратное ускорение для HTML5 Canvas
+3. Включить сглаживание (anti-aliasing)
+4. Включить асинхронное отображение, что повысить производительность при рендеринге
+5. Включить поддержку Direct2D для рендеринга
+6. Отключить прерывание работы при возникновении ошибок в Direct3D 11
+7. Отключает отладку в Direct3D 11
+8. Включить двойную буферизацию в Direct3D 11 для улучшения плавности рендеринга
+9. Включить аппаратное декодирование видео
+10. Включить новый рендеринг WebRender, который использует GPU для улучшения производительности
+11. Включить использование OpenGL 2.0 для аппаратного ускорения
+12. Включить использование отдельного процесса для обработки
+13. Отключить проверку актуальности драйвера на видеокарту
+14. Отключить задержку перед началом рендеринга страницы
+15. Отключить анимацию полного открытия видео и подсказку "нажмите esc.."
+16. Отключить прогнозирование перехода и предварительную загрузку содержимого страницы
 
 ### Настройка различных методов кэширования
 1. Включить кэширование диска
@@ -195,10 +207,22 @@ user.js — This is a configuration file for the browser, which is used to confi
 4. Preventing scripts from accessing the clipboard
 
 ### Configuring Page rendering
-1. Hardware acceleration activation, page rendering acceleration
-2. Disable the delay before starting page rendering
-3. Turn off the animation of opening the video to full and the prompt "press esc.."
-4. Disable transition prediction and page content preloading
+1. Enable support for WebGPU, a new API for working with graphics
+2. Enable hardware acceleration for HTML5 Canvas
+3. Enable anti-aliasing
+4. Enable asynchronous display, which improves rendering performance
+5. Enable Direct2D support for rendering
+6. Disable interruption of work when errors occur in Direct3D 11
+7. Disables debugging in Direct3D 11
+8. Enable double buffering in Direct3D 11 to improve smooth rendering
+9. Enable hardware video decoding
+10. Enable new WebRender rendering that uses GPU to improve performance
+11. Enable the use of OpenGL 2.0 for hardware acceleration
+12. Enable the use of a separate process for processing
+13. Disable checking the relevance of the driver on the video card
+14. Disable the delay before starting page rendering
+15. Turn off the animation of opening the video to full and the prompt "press esc.."
+16. Disable transition prediction and page content preloading
 
 ### Configuring a variety of caching
 1. Enable disk caching

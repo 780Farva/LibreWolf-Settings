@@ -192,8 +192,8 @@ user_pref("gfx.direct2d.force-enabled", true);
 // Отключить прерывание работы при возникновении ошибок в Direct3D 11
 user_pref("gfx.direct3d11.break-on-error", false);
 
-// Disables debugging in Direct3D 11
-// Отключает отладку в Direct3D 11
+// Disable debugging in Direct3D 11
+// Отключить отладку в Direct3D 11
 user_pref("gfx.direct3d11.enable-debug-layer", false);
 
 // Enable double buffering in Direct3D 11 to improve smooth rendering

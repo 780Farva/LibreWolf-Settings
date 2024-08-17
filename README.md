@@ -77,7 +77,7 @@ user.js — это файл конфигурации для браузера, к
 4. Включить асинхронное отображение, что повысить производительность при рендеринге
 5. Включить поддержку Direct2D для рендеринга
 6. Отключить прерывание работы при возникновении ошибок в Direct3D 11
-7. Отключает отладку в Direct3D 11
+7. Отключить отладку в Direct3D 11
 8. Включить двойную буферизацию в Direct3D 11 для улучшения плавности рендеринга
 9. Включить аппаратное декодирование видео
 10. Включить новый рендеринг WebRender, который использует GPU для улучшения производительности
@@ -218,7 +218,7 @@ user.js — This is a configuration file for the browser, which is used to confi
 4. Enable asynchronous display, which improves rendering performance
 5. Enable Direct2D support for rendering
 6. Disable interruption of work when errors occur in Direct3D 11
-7. Disables debugging in Direct3D 11
+7. Disable debugging in Direct3D 11
 8. Enable double buffering in Direct3D 11 to improve smooth rendering
 9. Enable hardware video decoding
 10. Enable new WebRender rendering that uses GPU to improve performance

@@ -285,7 +285,7 @@ user_pref("network.prefetch-next", false);
 user_pref("javascript.options.mem.gc_balanced_heap_limits", true);
 
 // Enable support for 64-bit memory model for WebAssembly (allows to use more than 4 Gb RAM)
-// Включить поддержкку 64-битной модели памяти для WebAssembly (позволяет использовать более 4 Gb ОЗУ)
+// Включить поддержку 64-битной модели памяти для WebAssembly (позволяет использовать более 4 Gb ОЗУ)
 user_pref("javascript.options.wasm_memory64", true);
 
 // Enable support for thin memory management instructions for WebAssembly

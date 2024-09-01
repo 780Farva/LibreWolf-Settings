@@ -88,6 +88,13 @@ user.js — это файл конфигурации для браузера, к
 15. Отключить анимацию полного открытия видео и подсказку "нажмите esc.."
 16. Отключить прогнозирование перехода и предварительную загрузку содержимого страницы
 
+### Настройка JavaScript
+1. Включить сбалансированные пределы кучи для сборки мусора (GC)
+2. Включить поддержкку 64-битной модели памяти для WebAssembly (позволяет использовать более 4 Gb ОЗУ)
+3. Включить поддержку инструкций тонкого управления памятью для WebAssembly
+4. Включить поддержку Intgemm для оптимизации выполнения операций матричного умножения в WebAssembly
+5. Включить поддержку экспериментальных функций сериализации для WebAssembly
+
 ### Настройка различных методов кэширования
 1. Включить кэширование диска
 2. Отключить автоматическое определение размера дискового кэша
@@ -228,6 +235,13 @@ user.js — This is a configuration file for the browser, which is used to confi
 14. Disable the delay before starting page rendering
 15. Turn off the animation of opening the video to full and the prompt "press esc.."
 16. Disable transition prediction and page content preloading
+
+### Configuring JavaScript
+1. Enable balanced heap limits for garbage collection (GC)
+2. Enable support for 64-bit memory model for WebAssembly (allows to use more than 4 Gb RAM)
+3. Enable support for thin memory management instructions for WebAssembly
+4. Enable Intgemm support to optimize matrix multiplication operations in WebAssembly
+5. Enable support for experimental serialization functions for WebAssembly
 
 ### Configuring a variety of caching
 1. Enable disk caching

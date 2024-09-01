@@ -1,5 +1,5 @@
 // LibreWolf settings
-// Version: 0.04 [17.08.2024]
+// Version: 0.05 [01.09.2024]
 // Description: LibreWolf browser settings, which allow you to disable many unnecessary and unsafe functions, 
 // as well as optimize other parameters to achieve maximum performance. At the same time, 
 // the correct operation of the sites is ensured without "breaking" them.
@@ -274,6 +274,31 @@ user_pref("network.predictor.subresource-degradation.month", 0);
 user_pref("network.predictor.subresource-degradation.week", 0);
 user_pref("network.predictor.subresource-degradation.year", 0);
 user_pref("network.prefetch-next", false);
+//-----------------------------------------------------------------------------------------------------------
+// Configuring JavaScript
+// Настройка JavaScript
+// Description: This section configures JavaScript for maximum performance.
+// Описание: В этом разделе настраивается JavaScript на максимальную производительность.
+
+// Enable balanced heap limits for garbage collection (GC)
+// Включить сбалансированные пределы кучи для сборки мусора (GC)
+user_pref("javascript.options.mem.gc_balanced_heap_limits", true);
+
+// Enable support for 64-bit memory model for WebAssembly (allows to use more than 4 Gb RAM)
+// Включить поддержкку 64-битной модели памяти для WebAssembly (позволяет использовать более 4 Gb ОЗУ)
+user_pref("javascript.options.wasm_memory64", true);
+
+// Enable support for thin memory management instructions for WebAssembly
+// Включить поддержку инструкций тонкого управления памятью для WebAssembly
+user_pref("javascript.options.wasm_memory_control", true);
+
+// Enable Intgemm support to optimize matrix multiplication operations in WebAssembly
+// Включить поддержку Intgemm для оптимизации выполнения операций матричного умножения в WebAssembly
+user_pref("javascript.options.wasm_moz_intgemm", true);
+
+// Enable support for experimental serialization functions for WebAssembly
+// Включить поддержку экспериментальных функций сериализации для WebAssembly
+user_pref("javascript.options.wasm_test_serialization", true);
 //-----------------------------------------------------------------------------------------------------------
 // Configuring a variety of caching
 // Настройка различных методов кэширования

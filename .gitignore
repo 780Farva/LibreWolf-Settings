@@ -1,0 +1,7 @@
+LibreWolf-Portable.exe
+LibreWolf-WinUpdater.exe
+LibreWolf-WinUpdater.ini
+LibreWolf/
+Profiles/
+ScheduledTask-Create.ps1
+ScheduledTask-Remove.ps1
